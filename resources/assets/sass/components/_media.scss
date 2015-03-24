@@ -1,0 +1,38 @@
+// We use these functions to define upper and lower boundries of ranges
+@function lower-bound($range) {
+  @if length($range) <= 0 {
+    @return 0;
+  }
+  @return nth($range, 1);
+}
+
+@function upper-bound($range) {
+  @if length($range) < 2 {
+    @return 999999999999;
+  }
+  @return nth($range, 2);
+}
+
+$screen: "only screen" !default;
+
+$landscape: "#{$screen} and (orientation: landscape)" !default;
+$portrait: "#{$screen} and (orientation: portrait)" !default;
+
+$xs-up: $screen !default;
+$xs-only: "#{$screen} and (max-width: #{upper-bound($xs-range)})" !default;
+
+$sm-up: "#{$screen} and (min-width:#{lower-bound($sm-range)})" !default;
+$sm-down: "#{$screen} and (max-width:#{upper-bound($sm-range)})" !default;
+$sm-only: "#{$screen} and (min-width:#{lower-bound($sm-range)}) and (max-width:#{upper-bound($sm-range)})" !default;
+
+$md-up: "#{$screen} and (min-width:#{lower-bound($md-range)})" !default;
+$md-down: "#{$screen} and (max-width:#{upper-bound($md-range)})" !default;
+$md-only: "#{$screen} and (min-width:#{lower-bound($md-range)}) and (max-width:#{upper-bound($md-range)})" !default;
+
+$lg-up: "#{$screen} and (min-width:#{lower-bound($lg-range)})" !default;
+$lg-down: "#{$screen} and (max-width:#{upper-bound($lg-range)})" !default;
+$lg-only: "#{$screen} and (min-width:#{lower-bound($lg-range)}) and (max-width:#{upper-bound($lg-range)})" !default;
+
+$xl-up: "#{$screen} and (min-width:#{lower-bound($xl-range)})" !default;
+$xl-down: "#{$screen} and (max-width:#{upper-bound($xl-range)})" !default;
+$xl-only: "#{$screen} and (min-width:#{lower-bound($xl-range)}) and (max-width:#{upper-bound($xl-range)})" !default;
