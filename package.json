@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "gulp": "~3.8.11",
+    "laravel-elixir": "*",
+    "gulp-imagemin": "^2.0.0",
+    "imagemin-pngquant": "^4.0.0"
+  }
+}

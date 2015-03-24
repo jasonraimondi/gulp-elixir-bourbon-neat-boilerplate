@@ -1,0 +1,78 @@
+fieldset {
+  background-color: lighten($base-border-color, 10%);
+  border: $base-border-color;
+  margin: 0 0 ($paragraph-line-height * 1rem) / 2;
+  padding: ($paragraph-line-height * 1rem);
+}
+
+input,
+label,
+select {
+  display: block;
+  font-family: $font-family-sans-serif;
+  font-size: $paragraph-font-size;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: ($paragraph-line-height * 1rem) / 2 / 2;
+
+  &.required::after {
+    content: "*";
+  }
+
+  abbr {
+    display: none;
+  }
+}
+
+#{$all-text-inputs},
+select[multiple=multiple],
+textarea {
+  background-color: $body-bg;
+  border: $base-border-color;
+  border-radius: $global-radius;
+  box-shadow: $form-box-shadow;
+  box-sizing: border-box;
+  font-family: $font-family-sans-serif;
+  font-size: $paragraph-font-size;
+  margin-bottom: ($paragraph-line-height * 1rem) / 2;
+  padding: ($paragraph-line-height * 1rem) / 3;
+  transition: border-color;
+  width: 100%;
+
+  &:hover {
+    border-color: darken($base-border-color, 10%);
+  }
+
+  &:focus {
+    border-color: $primary-color;
+    box-shadow: $form-box-shadow-focus;
+    // outline: none;
+  }
+}
+
+textarea {
+  resize: vertical;
+}
+
+// input[type="search"] {
+//   @include appearance(none);
+// }
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline;
+  margin-right: ($paragraph-line-height * 1rem) / 2 / 2;
+}
+
+input[type="file"] {
+  padding-bottom: ($paragraph-line-height * 1rem) / 2;
+  width: 100%;
+}
+
+select {
+  margin-bottom: ($paragraph-line-height * 1rem);
+  max-width: 100%;
+  width: auto;
+}

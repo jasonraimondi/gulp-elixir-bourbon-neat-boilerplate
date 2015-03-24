@@ -1,0 +1,75 @@
+body {
+  @include font-feature-settings("kern", "liga", "pnum");
+  background-color: $body-bg;
+  color: $body-font-color;
+  font-family: $body-font-family;
+  font-weight: $body-font-weight;
+  font-style: $body-font-style;
+  line-height: $paragraph-line-height;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $header-font-family;
+  font-style: $header-font-style;
+  font-weight: $header-font-weight;
+  line-height: $header-line-height;
+  margin: $header-top-margin 0 $header-bottom-margin;
+}
+
+h1 { font-size: $h1-font-size; }
+h2 { font-size: $h2-font-size; }
+h3 { font-size: $h3-font-size; }
+h4 { font-size: $h4-font-size; }
+h5 { font-size: $h5-font-size; }
+h6 { font-size: $h6-font-size; }
+
+p {
+  font-family: $paragraph-font-family;
+  font-size: $paragraph-font-size;
+  font-weight: $paragraph-font-weight;
+  line-height: $paragraph-line-height;
+  margin: 0 0 em(20);
+}
+
+a {
+  color: $anchor-font-color;
+  text-decoration: $anchor-text-decoration;
+  transition: color 0.1s linear;
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: $anchor-font-color-hover;
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+  }
+}
+
+hr {
+  // border-width: $hr-border-width;
+  border-bottom: $hr-border-width $hr-border-style $hr-border-color;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  margin: $hr-margin 0;
+}
+
+img,
+picture {
+  margin: 0;
+  max-width: 100%;
+}
+
+small {
+  color: $small-font-color;
+  font-size: $small-font-size;
+}
