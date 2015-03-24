@@ -26,7 +26,6 @@ elixir(function(mix) {
  mix.sass('style.scss', paths.DESTINATION + 'css', {
     includePaths : [
       paths.BOWER + 'bourbon/app/assets/stylesheets',
-      paths.BOWER + 'bitters/app/assets/stylesheets',
       paths.BOWER + 'neat/app/assets/stylesheets',
     ]}
  );
