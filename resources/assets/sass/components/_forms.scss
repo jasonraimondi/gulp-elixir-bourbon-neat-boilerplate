@@ -48,7 +48,7 @@ textarea {
   &:focus {
     border-color: $primary-color;
     box-shadow: $form-box-shadow-focus;
-    // outline: none;
+    outline: none;
   }
 }
 
@@ -56,9 +56,9 @@ textarea {
   resize: vertical;
 }
 
-// input[type="search"] {
-//   @include appearance(none);
-// }
+input[type="search"] {
+  @include appearance(none);
+}
 
 input[type="checkbox"],
 input[type="radio"] {
