@@ -35,6 +35,6 @@ elixir(function(mix) {
  mix.scripts(paths.BOWER + 'jquery/dist/jquery.js', paths.DESTINATION + 'js/jquery.js', './');
  mix.scripts(paths.BOWER + 'modernizr/modernizr.js', paths.DESTINATION + 'js/modernizr.js', './');
 
- mix.scriptsIn(paths.SOURCE + 'js', paths.DESTINATION + 'js/main.js');
+ mix.scriptsIn(paths.SOURCE + 'js/app', paths.DESTINATION + 'js/main.js');
 
 });
