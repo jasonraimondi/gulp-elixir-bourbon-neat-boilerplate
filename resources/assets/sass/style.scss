@@ -14,12 +14,15 @@ body {
 
 @import 'grid-settings'; // needs to be imported before neat
 
+@import 'settings/functions';
 @import 'settings/colors';
 @import 'settings/variables';
 @import 'settings/grid'; // needs to be imported before neat
 
 @import 'neat';
 
+@import 'components/mixins';
+@import 'components/media-queries';
 @import 'components/buttons';
 @import 'components/forms';
 @import 'components/lists';
