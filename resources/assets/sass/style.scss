@@ -1,4 +1,17 @@
 @import 'bourbon';
+
+// We put our faith in gulp's autoprefixer
+$prefix-for-webkit:    false;
+$prefix-for-mozilla:   false;
+$prefix-for-microsoft: false;
+$prefix-for-opera:     false;
+$prefix-for-spec:      false;
+
+html,
+body {
+	@include size(100%);
+}
+
 @import 'grid-settings'; // needs to be imported before neat
 
 @import 'settings/colors';
