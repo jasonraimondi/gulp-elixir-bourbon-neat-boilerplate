@@ -6,7 +6,7 @@ body {
   font-weight: $body-font-weight;
   font-style: $body-font-style;
   line-height: $paragraph-line-height;
-  -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: $font-smoothing;
 }
 
 h1,
@@ -20,6 +20,7 @@ h6 {
   font-weight: $header-font-weight;
   line-height: $header-line-height;
   margin: $header-top-margin 0 $header-bottom-margin;
+  text-rendering: $header-text-rendering;
 }
 
 h1 { font-size: $h1-font-size; }
@@ -34,7 +35,7 @@ p {
   font-size: $paragraph-font-size;
   font-weight: $paragraph-font-weight;
   line-height: $paragraph-line-height;
-  margin: 0 0 em(20);
+  margin: 0 0 rem(20);
 }
 
 a {
