@@ -37,17 +37,19 @@ p {
   font-weight: $paragraph-font-weight;
   line-height: $paragraph-line-height;
   margin: 0 0 rem(20);
+  text-rendering: $paragraph-text-rendering;
 }
 
 a {
   color: $anchor-font-color;
   text-decoration: $anchor-text-decoration;
-  transition: color 0.1s linear;
+  transition: all 0.5s ease;
 
   &:active,
   &:focus,
   &:hover {
     color: $anchor-font-color-hover;
+    text-decoration: $anchor-text-decoration-hover;
   }
 
   &:active,
