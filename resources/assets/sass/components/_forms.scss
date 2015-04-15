@@ -1,5 +1,27 @@
+#{$all-text-inputs},
+select[multiple=multiple],
+textarea {
+  background-color: $body-bg;
+  border: $base-border;
+  border-radius: $global-radius;
+  box-sizing: border-box;
+  padding: ($paragraph-line-height * 1rem) / 3;
+  transition: all 0.5s ease;
+  width: 100%;
+
+  &:hover {
+    border-color: scale-color($base-border-color, $lightness: -5%);
+    outline: none;
+  }
+
+  &:focus {
+    border-color: $primary-color;
+    outline: none;
+  }
+}
+
 fieldset {
-  background-color: lighten($base-border-color, 10%);
+  background-color: scale-color($base-border-color, $lightness: 10%);
   border: $base-border-color;
   margin: 0 0 ($paragraph-line-height * 1rem) / 2;
   padding: ($paragraph-line-height * 1rem);
@@ -26,31 +48,6 @@ label {
   }
 }
 
-#{$all-text-inputs},
-select[multiple=multiple],
-textarea {
-  background-color: $body-bg;
-  border: $base-border-color;
-  border-radius: $global-radius;
-  box-shadow: $form-box-shadow;
-  box-sizing: border-box;
-  font-family: $font-family-sans-serif;
-  font-size: $paragraph-font-size;
-  margin-bottom: ($paragraph-line-height * 1rem) / 2;
-  padding: ($paragraph-line-height * 1rem) / 3;
-  transition: border-color;
-  width: 100%;
-
-  &:hover {
-    border-color: darken($base-border-color, 10%);
-  }
-
-  &:focus {
-    border-color: $primary-color;
-    box-shadow: $form-box-shadow-focus;
-    outline: none;
-  }
-}
 
 textarea {
   resize: vertical;
