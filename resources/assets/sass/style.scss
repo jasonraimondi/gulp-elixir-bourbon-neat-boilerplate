@@ -12,9 +12,8 @@ body {
 	@include size(100%);
 }
 
-@import 'grid-settings'; // needs to be imported before neat
-
 @import 'settings/functions';
+@import 'settings/media-queries';
 @import 'settings/colors';
 @import 'settings/variables';
 @import 'settings/grid'; // needs to be imported before neat
@@ -22,7 +21,6 @@ body {
 @import 'neat';
 
 @import 'components/mixins';
-@import 'components/media-queries';
 @import 'components/buttons';
 @import 'components/forms';
 @import 'components/lists';

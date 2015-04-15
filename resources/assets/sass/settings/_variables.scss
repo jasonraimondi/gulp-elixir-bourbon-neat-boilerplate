@@ -96,14 +96,3 @@ $list-nested-margin: rem-calc(20);
 $definition-list-header-weight: $font-weight-bold;
 $definition-list-header-margin-bottom: .3rem;
 $definition-list-margin-bottom: rem-calc(12);
-
-$form-box-shadow: inset 0 1px 3px rgba(#000, 0.06);
-$form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($primary-color, $lightness: -5%, $alpha: -0.3);
-
-// Media Query Ranges
-$xs-range						: (0px, 479px);
-$sm-range						: (480px, 767px);
-$md-range						: (768px, 991px);
-$lg-range						: (992px, 1169px);
-$xl-range						: (1170px);
-
