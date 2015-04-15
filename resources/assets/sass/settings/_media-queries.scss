@@ -1,9 +1,9 @@
 // Media Query Ranges
-$small-range						: (0px, 479px);
-$medium-range						: (480px, 767px);
-$large-range						: (768px, 991px);
-$xlarge-range						: (992px, 1169px);
-$xxlarge-range					: (1170px);
+$small-range						: (rem(0), rem(479));
+$medium-range						: (rem(480), rem(767));
+$large-range						: (rem(768), rem(991));
+$xlarge-range						: (rem(992), rem(1169));
+$xxlarge-range					: (rem(1170));
 
 $screen: "only screen" !default;
 
