@@ -1,9 +1,9 @@
 $font-family-sans-serif: $helvetica;
-// $font-family-serif: $georgia;
+$font-family-serif: $georgia;
 $font-family-monospace: $monospace;
 
-$global-radius: 3px;
-// $global-rounded: 1000px;
+$global-radius: rem(3);
+// $global-rounded: rem(1000);
 
 $font-weight-normal: normal;
 $font-weight-bold: bold;
@@ -12,9 +12,10 @@ $body-bg: $white;
 $body-font-color: $jet;
 $body-font-family: $font-family-sans-serif;
 $body-font-weight: $font-weight-normal;
+$body-font-size: 100%;
 $body-font-style: normal;
 
-$base-border-width: 1px;
+$base-border-width: rem(1);
 $base-border-style: solid;
 $base-border-color: $gainsboro;
 $base-border: $base-border-width $base-border-style $base-border-color;
@@ -26,14 +27,14 @@ $header-font-weight: $font-weight-normal;
 $header-font-style: normal;
 $header-font-color: $jet;
 $header-line-height: 1.2;
-$header-top-margin: .2rem;
-$header-bottom-margin: .5rem;
+$header-top-margin: rem(3.2);
+$header-bottom-margin: rem(8);
 $header-text-rendering: optimizeLegibility;
 
 $h1-font-size: rem(44);
-$h2-font-size: rem(37);
-$h3-font-size: rem(27);
-$h4-font-size: rem(23);
+$h2-font-size: rem(36);
+$h3-font-size: rem(29);
+$h4-font-size: rem(24);
 $h5-font-size: rem(18);
 $h6-font-size: 1rem;
 
@@ -45,28 +46,25 @@ $h6-font-size: 1rem;
 // $h6-font-reduction: 0;
 
 $small-font-size: 60%;
-$small-font-color: scale-color($header-font-color, $lightness: 35%);
+$small-font-color: scale-color($header-font-color, $lightness: 15%);
 
 $paragraph-font-family: inherit;
 $paragraph-font-weight: $font-weight-normal;
 $paragraph-font-size: rem(16);
 $paragraph-line-height: 1.4;
 $paragraph-margin-bottom: rem(20);
-// $paragraph-text-rendering: optimizeLegibility;
+$paragraph-text-rendering: optimizeLegibility;
 
-// $code-color: $oil;
-// $code-font-family: $font-family-monospace;
-// $code-font-weight: $font-weight-normal;
+$code-color: scale-color($body-font-color, $lightness: 25%);
+$code-font-family: $font-family-monospace;
+$code-font-weight: $font-weight-normal;
 $code-background-color: scale-color($secondary-color, $lightness: 70%);
-// $code-border-size: 1px;
-// $code-border-style: solid;
-// $code-border-color: scale-color($code-background-color, $lightness: -10%);
-// $code-padding: rem(2) rem(5) rem(1);
+$code-padding: rem(20) rem(25);
 
 $anchor-text-decoration: none;
-// $anchor-text-decoration-hover: none;
+$anchor-text-decoration-hover: none;
 $anchor-font-color: $primary-color;
-$anchor-font-color-hover: scale-color($anchor-font-color, $lightness: -14%);
+$anchor-font-color-hover: scale-color($anchor-font-color, $lightness: -15%);
 
 $hr-border-width: 1px;
 $hr-border-style: solid;
