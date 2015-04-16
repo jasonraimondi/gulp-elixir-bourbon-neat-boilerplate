@@ -1,11 +1,11 @@
 @import 'bourbon';
 
 // We put our faith in gulp's autoprefixer
-$prefix-for-webkit:    false;
-$prefix-for-mozilla:   false;
-$prefix-for-microsoft: false;
-$prefix-for-opera:     false;
-$prefix-for-spec:      false;
+$prefix-for-webkit:    true;
+$prefix-for-mozilla:   true;
+$prefix-for-microsoft: true;
+$prefix-for-opera:     true;
+$prefix-for-spec:      true;
 
 html,
 body {
