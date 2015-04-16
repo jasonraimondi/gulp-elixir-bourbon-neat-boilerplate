@@ -2,11 +2,12 @@ $font-family-sans-serif: $helvetica;
 $font-family-serif: $georgia;
 $font-family-monospace: $monospace;
 
-$global-radius: rem(3);
-// $global-rounded: rem(1000);
+$global-radius: rem(4);
+$global-rounded: rem(1000);
 
-$font-weight-normal: normal;
-$font-weight-bold: bold;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
 
 $body-bg: $white;
 $body-font-color: $jet;
@@ -38,15 +39,15 @@ $h4-font-size: rem(24);
 $h5-font-size: rem(18);
 $h6-font-size: 1rem;
 
-// $h1-font-reduction: rem(10);
-// $h2-font-reduction: rem(10);
-// $h3-font-reduction: rem(5);
-// $h4-font-reduction: rem(5);
-// $h5-font-reduction: 0;
-// $h6-font-reduction: 0;
+$h1-font-reduction: rem(10);
+$h2-font-reduction: rem(10);
+$h3-font-reduction: rem(5);
+$h4-font-reduction: rem(5);
+$h5-font-reduction: 0;
+$h6-font-reduction: 0;
 
 $small-font-size: 60%;
-$small-font-color: scale-color($header-font-color, $lightness: 15%);
+$small-font-color: scale-color($header-font-color, $lightness: 25%);
 
 $paragraph-font-family: inherit;
 $paragraph-font-weight: $font-weight-normal;
@@ -55,16 +56,15 @@ $paragraph-line-height: 1.4;
 $paragraph-margin-bottom: rem(20);
 $paragraph-text-rendering: optimizeLegibility;
 
-$code-color: scale-color($body-font-color, $lightness: 25%);
+$code-color: scale-color($body-font-color, $lightness: 60%);
 $code-font-family: $font-family-monospace;
 $code-font-weight: $font-weight-normal;
-$code-background-color: scale-color($secondary-color, $lightness: 70%);
-$code-padding: rem(20) rem(25);
+$code-padding: rem(2) rem(5);
 
 $anchor-text-decoration: none;
 $anchor-text-decoration-hover: none;
 $anchor-font-color: $primary-color;
-$anchor-font-color-hover: scale-color($anchor-font-color, $lightness: -15%);
+$anchor-font-color-hover: scale-color($anchor-font-color, $lightness: -25%);
 
 $hr-border-width: 1px;
 $hr-border-style: solid;
@@ -72,8 +72,8 @@ $hr-border-color: $gainsboro;
 $hr-margin: rem(20);
 
 $button-bg-color: $color-1;
-$button-bg-color-hover: scale-color($button-bg-color, $lightness: -15%);
+$button-bg-color-hover: scale-color($button-bg-color, $lightness: -25%);
 $button-border-color: $color-2;
-$button-border-color-hover: scale-color($button-border-color, $lightness: -15%);
+$button-border-color-hover: scale-color($button-border-color, $lightness: -25%);
 $button-font-color: $white;
 $button-font-color-hover: $button-font-color;
