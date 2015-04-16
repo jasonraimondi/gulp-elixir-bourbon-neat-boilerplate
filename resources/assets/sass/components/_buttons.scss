@@ -1,8 +1,7 @@
 #{$all-button-inputs},
 button,
 .button {
-  @include appearance(none);
-  -webkit-font-smoothing: antialiased;
+  // @include appearance(none);
   background-color: $button-bg-color;
   border-radius: $global-radius;
   border: none;
@@ -14,6 +13,7 @@ button,
   text-decoration: none;
   vertical-align: middle;
   transition: all 0.5s ease;
+  -webkit-font-smoothing: antialiased;
 
   &:hover,
   &:focus {
