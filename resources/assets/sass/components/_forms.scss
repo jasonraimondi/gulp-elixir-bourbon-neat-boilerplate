@@ -1,6 +1,6 @@
 label {
   font-weight: 600;
-  margin-bottom: ($paragraph-line-height * 1rem) / 2 / 2;
+  margin-bottom: rem(16);
 
   &.required::after {
     content: "*";
@@ -12,13 +12,16 @@ label {
 }
 
 #{$all-text-inputs},
-select[multiple=multiple],
-textarea {
+select,
+select[multiple=multiple] {
   background-color: $body-bg;
   border: $base-border;
   border-radius: $global-radius;
   box-sizing: border-box;
-  padding: ($paragraph-line-height * 1rem) / 3;
+  display: block;
+  margin: rem(4) 0 rem(16);
+  max-width: 100%;
+  padding: rem(10);
   transition: all 0.5s ease;
   width: 100%;
 
@@ -33,32 +36,16 @@ textarea {
   }
 }
 
-select {
-  display: block;
-  // margin: (($paragraph-line-height * 1rem) / 2) 0 ($paragraph-line-height * 1rem);
-  max-width: 100%;
-  width: 100%;
-}
-
 textarea {
   resize: vertical;
-  max-width: 100%;
-}
-
-input[type="search"] {
-  @include appearance(none);
 }
 
 input[type="checkbox"],
 input[type="radio"] {
   display: inline;
-  margin-right: ($paragraph-line-height * 1rem) / 2 / 2;
+  margin: rem(4) rem(8) rem(16) rem(4);
 }
 
 input[type="file"] {
-  padding-bottom: ($paragraph-line-height * 1rem) / 2;
-  width: 100%;
-}
-
-select {
+  padding-bottom: rem(10);
 }
