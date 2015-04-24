@@ -23,18 +23,20 @@ return gulp.src(paths.SOURCE + 'images/**/*.{png,jpg,gif}')
 
 elixir(function(mix) {
 
- mix.sass('style.scss', paths.DESTINATION + 'css', {
-    includePaths : [
-      paths.BOWER + 'bourbon/app/assets/stylesheets',
-      paths.BOWER + 'neat/app/assets/stylesheets',
-    ]}
- );
+    mix.sass('style.scss', paths.DESTINATION + 'css', {
+        includePaths : [
+            paths.BOWER + 'bourbon/app/assets/stylesheets',
+            paths.BOWER + 'neat/app/assets/stylesheets',
+        ]}
+    );
 
- mix.styles(paths.BOWER + 'normalize.css/normalize.css', paths.DESTINATION + 'css/normalize.css', './');
+    mix.styles(paths.BOWER + 'normalize.css/normalize.css', paths.DESTINATION + 'css/normalize.css', './');
 
- mix.scripts(paths.BOWER + 'jquery/dist/jquery.js', paths.DESTINATION + 'js/jquery.js', './');
- mix.scripts(paths.BOWER + 'modernizr/modernizr.js', paths.DESTINATION + 'js/modernizr.js', './');
+    mix.scripts(paths.BOWER + 'jquery/dist/jquery.js', paths.DESTINATION + 'js/jquery.js', './');
+    mix.scripts(paths.BOWER + 'modernizr/modernizr.js', paths.DESTINATION + 'js/modernizr.js', './');
 
- mix.scriptsIn(paths.SOURCE + 'js/app', paths.DESTINATION + 'js/main.js');
+    mix.copy(paths.SOURCE + 'images', paths.DESTINATION + 'images');
+
+    mix.scriptsIn(paths.SOURCE + 'js/app', paths.DESTINATION + 'js/main.js');
 
 });

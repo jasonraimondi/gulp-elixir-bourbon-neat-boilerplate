@@ -1,0 +1,132 @@
+$total-columns: 12 !default;
+$cell-gutter: rem(25) !default;
+$cell-padding: rem(15) !default;
+$page-width: 100% !default;
+
+@mixin columnSizing($column-size,$total-columns) {
+  @for $i from 1 through $total-columns {
+
+    .#{$column-size}-#{$i} {
+      flex-basis: calc(100% * #{$i} / #{$total-columns} - #{$cell-gutter});
+      max-width: calc(100% * #{$i} / #{$total-columns} - #{$cell-gutter});
+      margin: ($cell-gutter / 2);
+      padding: $cell-padding;
+    }
+  }
+}
+
+// adds fallback for column sizing to remove redundant markup in html
+// i.e. now you only need to use medium-6 to get a column that will
+// fall back to small-12 on small screens
+@mixin columnFallbackSizing($total-columns) {
+  @for $i from 1 through $total-columns {
+    .medium-#{$i},
+    .large-#{$i},
+    .xlarge-#{$i},
+    .xxlarge-#{$i} {
+      flex-basis: calc(100% - #{$cell-gutter});
+      max-width: calc(100% - #{$cell-gutter});
+      margin: ($cell-gutter / 2);
+      padding: $cell-padding;
+    }
+  }
+}
+
+@mixin columns($column-size, $columns) {
+  flex-basis: calc(100% * #{$columns} / #{$total-columns} - #{$cell-gutter});
+  max-width: calc(100% * #{$columns} / #{$total-columns} - #{$cell-gutter});
+  margin: ($cell-gutter / 2);
+}
+
+.row {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: $page-width;
+  width: 100%;
+
+  &.reverse {
+    flex-direction: row-reverse;
+    flex-wrap: row-reverse;
+  }
+}
+.column,
+.columns {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+
+  &.reverse {
+    flex-direction: column-reverse;
+    flex-wrap: column-reverse;
+  }
+  &:first-child {
+    margin-left: 0;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+
+}
+.flex {
+  flex-grow: 1;
+  margin: $cell-gutter / 2;
+  max-width: 100%;
+}
+
+// TODO: extend this nonsense instead of 4 separate includes
+@include columnFallbackSizing($total-columns);
+@include columnSizing('small',$total-columns);
+@media #{$medium-up} {
+  @include columnSizing('medium',$total-columns);
+}
+@media #{$large-up} {
+  @include columnSizing('large',$total-columns);
+}
+@media #{$xlarge-up} {
+  @include columnSizing('xlarge',$total-columns);
+}
+@media #{$xxlarge-up} {
+  @include columnSizing('xxlarge',$total-columns);
+}
+
+
+// arrangement mixins
+.start {
+  justify-content: flex-start;
+}
+.v-center {
+  justify-content: center;
+}
+.end {
+  justify-content: flex-end;
+}
+
+.top {
+  align-items: flex-start;
+}
+.h-center {
+  align-items: center;
+}
+.bottom {
+  align-items: flex-end;
+}
+
+.stretch {
+  align-items: stretch;
+}
+.around {
+  justify-content: space-around;
+}
+.between {
+  justify-content: space-between;
+}
+
+.first {
+  order: -1;
+}
+.last {
+  order: 1;
+}
