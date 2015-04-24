@@ -1,79 +1,90 @@
-$font-family-sans-serif: $helvetica;
-$font-family-serif: $georgia;
-$font-family-monospace: $monospace;
 
-$global-radius: rem(4);
-$global-rounded: rem(1000);
+// // PAGE
+$total-columns: 12;
+$cell-gutter: rem(25);
+$cell-padding: rem(15);
+$page-width: 1000px;
 
-$font-weight-light: 300;
-$font-weight-normal: 400;
-$font-weight-bold: 700;
+// // GLOBAL
+// $font-family-sans-serif: $georgia;
+// $font-family-serif: $georgia;
+// $font-family-monospace: $monospace;
 
-$body-bg: $white;
-$body-font-color: $jet;
-$body-font-family: $font-family-sans-serif;
-$body-font-weight: $font-weight-normal;
-$body-font-size: 100%;
-$body-font-style: normal;
+// $global-radius: rem(4);
+// $global-rounded: rem(1000);
 
-$base-border-width: rem(1);
-$base-border-style: solid;
-$base-border-color: $gainsboro;
-$base-border: $base-border-width $base-border-style $base-border-color;
+// $font-weight-light: 300;
+// $font-weight-normal: 400;
+// $font-weight-bold: 700;
 
-$font-smoothing: antialiased;
+// $body-bg: $white;
+// $body-font-color: $jet;
+// $body-font-family: $font-family-sans-serif;
+// $body-font-weight: $font-weight-normal;
+// $body-font-size: 100%;
+// $body-font-style: normal;
 
-$header-font-family: $body-font-family;
-$header-font-weight: $font-weight-normal;
-$header-font-style: normal;
-$header-font-color: $jet;
-$header-line-height: 1.2;
-$header-top-margin: rem(3.2);
-$header-bottom-margin: rem(8);
-$header-text-rendering: optimizeLegibility;
+// $base-border-width: rem(1);
+// $base-border-style: solid;
+// $base-border-color: $gainsboro;
+// $base-border: $base-border-width $base-border-style $base-border-color;
 
-$h1-font-size: rem(44);
-$h2-font-size: rem(36);
-$h3-font-size: rem(29);
-$h4-font-size: rem(24);
-$h5-font-size: rem(18);
-$h6-font-size: 1rem;
+// $font-smoothing: antialiased;
 
-$h1-font-reduction: rem(10);
-$h2-font-reduction: rem(10);
-$h3-font-reduction: rem(5);
-$h4-font-reduction: rem(5);
-$h5-font-reduction: 0;
-$h6-font-reduction: 0;
 
-$small-font-size: 60%;
-$small-font-color: scale-color($header-font-color, $lightness: 25%);
+// // TYPOGRAPHY
+// $header-font-family: $body-font-family;
+// $header-font-weight: $font-weight-normal;
+// $header-font-style: normal;
+// $header-font-color: $jet;
+// $header-line-height: 1.2;
+// $header-top-margin: rem(3.2);
+// $header-bottom-margin: rem(8);
+// $header-text-rendering: optimizeLegibility;
 
-$paragraph-font-family: inherit;
-$paragraph-font-weight: $font-weight-normal;
-$paragraph-font-size: rem(16);
-$paragraph-line-height: 1.4;
-$paragraph-margin-bottom: rem(20);
-$paragraph-text-rendering: optimizeLegibility;
+// $h1-font-size: rem(44);
+// $h2-font-size: rem(36);
+// $h3-font-size: rem(29);
+// $h4-font-size: rem(24);
+// $h5-font-size: rem(18);
+// $h6-font-size: 1rem;
 
-$code-color: scale-color($body-font-color, $lightness: 60%);
-$code-font-family: $font-family-monospace;
-$code-font-weight: $font-weight-normal;
-$code-padding: rem(2) rem(5);
+// $h1-font-reduction: rem(10);
+// $h2-font-reduction: rem(10);
+// $h3-font-reduction: rem(5);
+// $h4-font-reduction: rem(5);
+// $h5-font-reduction: 0;
+// $h6-font-reduction: 0;
 
-$anchor-text-decoration: none;
-$anchor-text-decoration-hover: none;
-$anchor-font-color: $primary-color;
-$anchor-font-color-hover: scale-color($anchor-font-color, $lightness: -25%);
+// $small-font-size: 60%;
+// $small-font-color: scale-color($header-font-color, $lightness: 25%);
 
-$hr-border-width: 1px;
-$hr-border-style: solid;
-$hr-border-color: $gainsboro;
-$hr-margin: rem(20);
+// $paragraph-font-family: inherit;
+// $paragraph-font-weight: $font-weight-normal;
+// $paragraph-font-size: rem(16);
+// $paragraph-line-height: 1.4;
+// $paragraph-margin-bottom: rem(20);
+// $paragraph-text-rendering: optimizeLegibility;
 
-$button-bg-color: $color-1;
-$button-bg-color-hover: scale-color($button-bg-color, $lightness: -25%);
-$button-border-color: $color-2;
-$button-border-color-hover: scale-color($button-border-color, $lightness: -25%);
-$button-font-color: $white;
-$button-font-color-hover: $button-font-color;
+// $code-color: scale-color($body-font-color, $lightness: 60%);
+// $code-font-family: $font-family-monospace;
+// $code-font-weight: $font-weight-normal;
+// $code-padding: rem(2) rem(5);
+
+// $anchor-text-decoration: none;
+// $anchor-text-decoration-hover: none;
+// $anchor-font-color: $color-1;
+// $anchor-font-color-hover: scale-color($anchor-font-color, $lightness: -25%);
+
+// $hr-border-width: 1px;
+// $hr-border-style: solid;
+// $hr-border-color: $gainsboro;
+// $hr-margin: rem(20);
+
+// // BUTTONS
+// $button-bg-color: $color-1;
+// $button-bg-color-hover: scale-color($button-bg-color, $lightness: -25%);
+// $button-border-color: $color-2;
+// $button-border-color-hover: scale-color($button-border-color, $lightness: -25%);
+// $button-font-color: $white;
+// $button-font-color-hover: $button-font-color;

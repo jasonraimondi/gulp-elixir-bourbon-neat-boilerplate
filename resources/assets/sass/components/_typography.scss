@@ -1,3 +1,59 @@
+$body-bg: $white !default;
+$body-font-color: $jet !default;
+$body-font-family: $font-family-sans-serif !default;
+$body-font-weight: $font-weight-normal !default;
+$body-font-size: 100% !default;
+$body-font-style: normal !default;
+
+$paragraph-font-family: inherit !default;
+$paragraph-font-weight: $font-weight-normal !default;
+$paragraph-font-size: rem(16) !default;
+$paragraph-line-height: 1.4 !default;
+$paragraph-margin-bottom: rem(20) !default;
+$paragraph-text-rendering: optimizeLegibility !default;
+
+$header-font-family: $body-font-family !default;
+$header-font-weight: $font-weight-normal !default;
+$header-font-style: normal !default;
+$header-font-color: $jet !default;
+$header-line-height: 1.2 !default;
+$header-top-margin: rem(3.2) !default;
+$header-bottom-margin: rem(8) !default;
+$header-text-rendering: optimizeLegibility !default;
+
+$h1-font-size: rem(44) !default;
+$h2-font-size: rem(36) !default;
+$h3-font-size: rem(29) !default;
+$h4-font-size: rem(24) !default;
+$h5-font-size: rem(18) !default;
+$h6-font-size: 1rem !default;
+
+$h1-font-reduction: rem(10) !default;
+$h2-font-reduction: rem(10) !default;
+$h3-font-reduction: rem(5) !default;
+$h4-font-reduction: rem(5) !default;
+$h5-font-reduction: 0 !default;
+$h6-font-reduction: 0 !default;
+
+$small-font-size: 60% !default;
+$small-font-color: scale-color($header-font-color, $lightness: 25%) !default;
+
+$code-color: scale-color($body-font-color, $lightness: 60%) !default;
+$code-font-family: $font-family-monospace !default;
+$code-font-weight: $font-weight-normal !default;
+$code-padding: rem(2) rem(5) !default;
+
+$anchor-text-decoration: none !default;
+$anchor-text-decoration-hover: none !default;
+$anchor-font-color: $color-1 !default;
+$anchor-font-color-hover: scale-color($anchor-font-color, $lightness: -25%) !default;
+
+$hr-border-width: 1px !default;
+$hr-border-style: solid !default;
+$hr-border-color: $gainsboro !default;
+$hr-margin: rem(20) !default;
+
+
 body {
   @include font-feature-settings("kern", "liga", "pnum");
   background-color: $body-bg;

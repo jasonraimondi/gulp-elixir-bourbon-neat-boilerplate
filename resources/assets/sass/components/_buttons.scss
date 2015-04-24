@@ -1,3 +1,10 @@
+$global-radius: rem(4) !default;
+
+$button-bg-color: $color-1 !default;
+$button-bg-color-hover: scale-color($button-bg-color, $lightness: -25%) !default;
+$button-font-color: $white !default;
+$button-font-color-hover: $button-font-color !default;
+
 #{$all-button-inputs},
 button,
 .button {

@@ -1,0 +1,25 @@
+// GLOBAL
+$font-family-sans-serif: $helvetica !default;
+$font-family-serif: $georgia !default;
+$font-family-monospace: $monospace !default;
+
+$global-radius: rem(4) !default;
+$global-rounded: rem(1000) !default;
+
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-bold: 700 !default;
+
+$body-bg: $white !default;
+$body-font-color: $jet !default;
+$body-font-family: $font-family-sans-serif !default;
+$body-font-weight: $font-weight-normal !default;
+$body-font-size: 100% !default;
+$body-font-style: normal !default;
+
+$base-border-width: rem(1) !default;
+$base-border-style: solid !default;
+$base-border-color: $gainsboro !default;
+$base-border: $base-border-width $base-border-style $base-border-color !default;
+
+$font-smoothing: antialiased !default;

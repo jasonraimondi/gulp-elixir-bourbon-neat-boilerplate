@@ -1,3 +1,9 @@
+$body-bg: $white !default;
+$base-border: $base-border-width $base-border-style $base-border-color !default;
+$global-radius: rem(4) !default;
+$base-border-color: $gainsboro !default;
+$color-1: $color-1 !default;
+
 label {
   font-weight: 600;
   margin-bottom: rem(16);
@@ -31,7 +37,7 @@ select[multiple=multiple] {
   }
 
   &:focus {
-    border-color: $primary-color;
+    border-color: $color-1;
     outline: none;
   }
 }

@@ -12,9 +12,10 @@ body {
 	@include size(100%);
 }
 
+@import 'settings/colors';
+@import 'settings/global';
 @import 'settings/functions';
 @import 'settings/media-queries';
-@import 'settings/colors';
 @import 'settings/variables';
 
 @import 'neat';
@@ -25,3 +26,4 @@ body {
 @import 'components/elements';
 @import 'components/forms';
 @import 'components/buttons';
+@import 'components/grid';
