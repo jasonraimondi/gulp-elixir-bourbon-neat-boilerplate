@@ -1,0 +1,56 @@
+[{
+    "id": 7,
+    "company": "Web Services LLC",
+    "location": "Somewhere",
+    "title": "Webmaster \/ Front End Developer",
+    "start": "Jun 2014",
+    "end": "Present",
+    "description": "{\"1\":\"Maintained LAMP stack on a Red Hat Enterprise dedicated server with over 100 live sites.\",\"2\":\"Assisted clients with various updates and changes to their websites, including open source CMS systems such as WordPress and Magento & custom built web software using Laravel, CodeIgniter, and FuelPHP.\",\"3\":\"Collaborated with back end developers while providing design prototyping and front end development and for new web software projects built in Laravel and FuelPHP.\"}",
+    "active": 1,
+    "created_at": "2015-04-17 02:28:47",
+    "updated_at": "2015-04-17 02:28:47"
+}, {
+    "id": 6,
+    "company": "Digital Canvas Design LLC",
+    "location": "Somewhere",
+    "title": "Founder \/ Webmaster",
+    "start": "May 2011",
+    "end": "Present",
+    "description": "{\"1\":\"Starting as a freelancer in May of 2011, as time went on I started to gain more and more clients, in January of 2014 I founded Digital Canvas Design LLC to maintain my work.\",\"2\":\"In charge of web hosting and management on a CentOS cloud private server.\",\"3\":\"Website design, hosting, and management; E-Commerce, Search Engine Optimization. WordPress, WooCommerce, Magento, Foundation, Bootstrap.\"}",
+    "active": 1,
+    "created_at": "2015-04-17 02:28:47",
+    "updated_at": "2015-04-17 02:28:47"
+}, {
+    "id": 5,
+    "company": "Ace Blueprinting & Graphics",
+    "location": "Ft. Lauderdale, Fl",
+    "title": "Graphic Designer",
+    "start": "May 2011",
+    "end": "Dec 2013",
+    "description": "{\"1\":\"Work with clients on a variety of projects, concept to printed work, ranging from large scale banners to business cards; designed vector and raster graphics using both Illustrator and Photoshop.\",\"2\":\"Fabricated several new custom built computers suited for specific tasks ranging from graphics processing and print management to office administration and accounting.\"}",
+    "active": 1,
+    "created_at": "2015-04-17 02:28:47",
+    "updated_at": "2015-04-17 02:28:47"
+}, {
+    "id": 2,
+    "company": "University of Florida Sea Grant",
+    "location": "Somewhere",
+    "title": "Front End Developer",
+    "start": "Apr 2012",
+    "end": "Jul 2012",
+    "description": "{\"1\":\"Collaborated with a small team authoring a web survey for gathering research data on the Greater Sarasota Bay in Florida.\"}",
+    "active": 1,
+    "created_at": "2015-04-17 02:28:46",
+    "updated_at": "2015-04-17 02:28:46"
+}, {
+    "id": 1,
+    "company": "Publix",
+    "location": "Somewhere",
+    "title": "Various Roles",
+    "start": "Jun 2004",
+    "end": "Jul 2011",
+    "description": "{\"1\":\"Assumed various roles, with increasing responsibility: Front Service Personnel, Cashier, Produce Clerk, and Bakery Clerk.\",\"2\":\"Demonstrated to fellow associates the tasks that they had to complete which resulted in the delivery of quality customer service to each and every customer.\",\"3\":\"Consistently received 'role model associate' on our six month evaluations.\"}",
+    "active": 1,
+    "created_at": "2015-04-17 02:28:46",
+    "updated_at": "2015-04-17 02:28:46"
+}]

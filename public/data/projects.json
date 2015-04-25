@@ -1,0 +1,117 @@
+[{
+    "id": 1,
+    "title": "AC Filters Today",
+    "slug": "ac-filters-today",
+    "link": "www.acfilterstoday.com",
+    "thumbnail": "ac-filters-today-th.jpg",
+    "description": "AC Filters Today is air filter based eCommerce site I built for Air Around the Clock, one of the largest AC Repair Companies in South Florida. The site is built on the Magento eCommerce platform and I am the sole developer and designer of the site. The site is already in it's soft launch phase and is scheduled for a hard launch in Fall of 2014.",
+    "active": 1,
+    "created_at": "2015-04-17 02:28:35",
+    "updated_at": "2015-04-17 02:28:35",
+    "categories": [{
+        "id": 1,
+        "name": "Featured",
+        "created_at": "2015-04-17 02:28:34",
+        "updated_at": "2015-04-17 02:28:34",
+        "pivot": {
+            "project_id": 1,
+            "category_id": 1
+        }
+    }, {
+        "id": 2,
+        "name": "Web",
+        "created_at": "2015-04-17 02:28:35",
+        "updated_at": "2015-04-17 02:28:35",
+        "pivot": {
+            "project_id": 1,
+            "category_id": 2
+        }
+    }]
+}, {
+    "id": 5,
+    "title": "Break Jack Out-of-the-Box",
+    "slug": "break-jack-out-of-the-box",
+    "link": "http:\/\/www.vimeo.com\/75551487",
+    "thumbnail": "break-jack-out-of-the-box-th.jpg",
+    "description": "One of my first stop motion videos consisting of over 1500 individually shot and edited photographs.",
+    "active": 1,
+    "created_at": "2015-04-17 02:28:35",
+    "updated_at": "2015-04-17 02:28:35",
+    "categories": [{
+        "id": 1,
+        "name": "Featured",
+        "created_at": "2015-04-17 02:28:34",
+        "updated_at": "2015-04-17 02:28:34",
+        "pivot": {
+            "project_id": 5,
+            "category_id": 1
+        }
+    }, {
+        "id": 3,
+        "name": "Video",
+        "created_at": "2015-04-17 02:28:35",
+        "updated_at": "2015-04-17 02:28:35",
+        "pivot": {
+            "project_id": 5,
+            "category_id": 3
+        }
+    }]
+}, {
+    "id": 7,
+    "title": "Cure Boredom",
+    "slug": "cure-boredom",
+    "link": "http:\/\/www.vimeo.com\/29276657",
+    "thumbnail": "cure-boredom-th.jpg",
+    "description": "A video montage shot & edited myself.",
+    "active": 1,
+    "created_at": "2015-04-17 02:28:35",
+    "updated_at": "2015-04-17 02:28:35",
+    "categories": [{
+        "id": 1,
+        "name": "Featured",
+        "created_at": "2015-04-17 02:28:34",
+        "updated_at": "2015-04-17 02:28:34",
+        "pivot": {
+            "project_id": 7,
+            "category_id": 1
+        }
+    }, {
+        "id": 3,
+        "name": "Video",
+        "created_at": "2015-04-17 02:28:35",
+        "updated_at": "2015-04-17 02:28:35",
+        "pivot": {
+            "project_id": 7,
+            "category_id": 3
+        }
+    }]
+}, {
+    "id": 12,
+    "title": "Much Ado About Portraits",
+    "slug": "much-ado-about-portraits",
+    "link": "http:\/\/www.vimeo.com\/75548944",
+    "thumbnail": "much-ado-about-portraits-th.jpg",
+    "description": "",
+    "active": 1,
+    "created_at": "2015-04-17 02:28:36",
+    "updated_at": "2015-04-17 02:28:36",
+    "categories": [{
+        "id": 1,
+        "name": "Featured",
+        "created_at": "2015-04-17 02:28:34",
+        "updated_at": "2015-04-17 02:28:34",
+        "pivot": {
+            "project_id": 12,
+            "category_id": 1
+        }
+    }, {
+        "id": 3,
+        "name": "Video",
+        "created_at": "2015-04-17 02:28:35",
+        "updated_at": "2015-04-17 02:28:35",
+        "pivot": {
+            "project_id": 12,
+            "category_id": 3
+        }
+    }]
+}]

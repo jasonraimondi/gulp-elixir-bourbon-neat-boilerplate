@@ -1,0 +1,218 @@
+// Topbar
+$navigation-padding: 1em;
+$navigation-logo-height: 2em;
+$navigation-background: rgba($white, 0.2);
+$navigation-color: $gainsboro;
+$navigation-color-hover: $gainsboro;
+$navigation-height: rem(60);
+$navigation-item-padding: 1em;
+$navigation-submenu-padding: 1em;
+$navigation-submenu-width: 12em;
+$navigation-item-nudge: 2.2em;
+
+
+.is-sticky .centered-navigation,
+#stuck {
+  background-color: $color-1 !important;
+  border-bottom: rem(2) solid scale-color($color-1, $lightness: -15%);
+}
+
+.centered-navigation {
+  background-color: $navigation-background;
+  border-bottom: rem(1) solid darken($navigation-background, 6%);
+  min-height: $navigation-height;
+  transition: all 1s ease;
+  width: 100%;
+  z-index: 9999;
+
+  // Mobile view
+
+  .mobile-logo {
+    display: inline;
+    float: left;
+    max-height: $navigation-height;
+    padding-left: $navigation-padding;
+
+    img {
+      max-height: $navigation-height;
+      padding: .8em 0;
+    }
+
+    @media #{$large-up} {
+      display: none;
+    }
+  }
+
+  .centered-navigation-mobile-menu {
+    color: $navigation-color;
+    display: block;
+    float: right;
+    font-weight: $font-weight-normal;
+    line-height: $navigation-height;
+    margin: 0;
+    padding-right: $navigation-submenu-padding;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    @media #{$large-up} {
+      display: none;
+    }
+
+    &:focus,
+    &:hover {
+      color: $navigation-color-hover;
+      font-weight: $font-weight-bold;
+    }
+  }
+
+  // Nav menu
+
+  .centered-navigation-wrapper {
+    @include outer-container;
+    @include clearfix;
+    position: relative;
+    z-index: 999;
+  }
+
+  ul.centered-navigation-menu {
+    -webkit-transform-style: preserve-3d; // stop webkit flicker
+    clear: both;
+    display: none;
+    margin: 0 auto;
+    overflow: visible;
+    padding: 0;
+    width: 100%;
+    z-index: 99999;
+
+    &.show {
+      display: block;
+    }
+
+    @media #{$large-up} {
+      display: block;
+      text-align: center;
+    }
+  }
+
+  // The nav items
+
+  .nav-link:first-child {
+    @media #{$large-up} {
+      margin-left: $navigation-item-nudge;
+    }
+  }
+
+  ul li.nav-link {
+    background: $color-1;
+    border-top: rem(2) solid scale-color($color-1, $lightness: -15%);
+    display: block;
+    line-height: $navigation-height;
+    overflow: hidden;
+    padding-right: $navigation-submenu-padding;
+    text-align: right;
+    width: 100%;
+    z-index: 9999;
+
+    a {
+      color: $navigation-color;
+      display: inline-block;
+      outline: none;
+      text-decoration: none;
+
+      &:focus,
+      &:hover {
+        color: $navigation-color-hover;
+      }
+    }
+
+    @media #{$large-up} {
+      background: transparent;
+      display: inline;
+      line-height: $navigation-height;
+      border-top: none;
+
+      a {
+        padding-right: $navigation-item-padding;
+      }
+    }
+  }
+
+  li.logo.nav-link {
+    display: none;
+    line-height: 0;
+
+    @media #{$large-up} {
+      display: inline;
+    }
+  }
+
+  .logo img {
+    margin-bottom: -$navigation-logo-height / 3;
+    max-height: $navigation-logo-height;
+  }
+
+}
+
+.hamburger-cross {
+  display: inline-block;
+  position: relative;
+  padding: 3px 8px;
+  cursor: pointer;
+  &:hover .navicon {
+    &:before {
+    }
+    &:after {
+    }
+  }
+}
+.navicon {
+  display: block;
+  width: 35px;
+  border-radius: 2px;
+  position: relative;
+  background: $white;
+  height: 5px;
+  -webkit-transition: .5s;
+  &:before {
+    top: -8px;
+  }
+  &:after {
+    top: 8px;
+  }
+}
+.navicon::before {
+  display: block;
+  width: 35px;
+  border-radius: 2px;
+  position: absolute;
+  background: $white;
+  height: 5px;
+  content: "";
+  -webkit-transition: .5s;
+}
+.navicon::after {
+  display: block;
+  width: 35px;
+  border-radius: 2px;
+  position: absolute;
+  background: $white;
+  height: 5px;
+  content: "";
+  -webkit-transition: .5s;
+}
+.open {
+  .navicon {
+    background: transparent;
+
+    &:before {
+      -webkit-transform: rotate(45deg);
+      top: 0;
+    }
+    &:after {
+      -webkit-transform: rotate(-45deg);
+      top: 0;
+    }
+  }
+  &.hamburger-cross:hover .navicon:before {
+  }
+}

@@ -1,1 +1,163 @@
-HOME PAGE
+
+    <header id="hello">
+
+        <article>
+            <div class="hi">
+                <h3><i class="icon-canvas"></i> Hi, I'm</h3>
+                <h1 style="font-weight:lighter">JASON</span><span style="font-weight:bold">RAIMONDI</span></h1>
+            </div>
+        </article>
+
+        <div ng-include src="'/partials/nav.html'"></div>
+
+    </header>
+
+    <section id="me">
+
+        <div class="me"></div>
+        <div class="aboutme">
+            <h1>JASON<span style="font-weight:bold">RAIMONDI</span></h1>
+            <h3>Web Developer | Sysadmin | Digital Artist</h3>
+        </div>
+
+    </section>
+
+    <section id="skills">
+
+
+            <header>
+            <h3>Skills</h3>
+            <h5><span>I've Got Them</span></h5>
+            </header>
+
+            <article>
+                <p>Since these skill graphs are kind of arbitrary, I'll give you an idea of where my numbers come from.</p>
+            </article>
+
+            <article id="skills-slider">
+				<ul>
+					<li ng-repeat="skill in skills">
+						<p>{{ skill.name }}</p>
+						<p>{{ skill.percent }}</p>
+					</li>
+				</ul>
+            </article>
+
+
+    </section>
+
+
+
+    <section id="resume">
+
+        <header>
+            <h3>Resume</h3>
+            <h5><span>Woah, Killer Resume</span></h5>
+        </header>
+
+        <article id="timeline-padding">
+            <div id="timeline">
+
+                <div class="timeline-block" ng-repeat="resume in resumes">
+                    <div class="timeline-img picture">
+                        <img src="/assets/images/test/cd-icon-picture.svg" alt="Picture">
+                    </div>
+
+                    <div class="timeline-content">
+                    <h4>{{ resume.company }}</h4>
+                        <ul>
+                            <li>{{ resume.description }}</li>
+                        </ul>
+                        <span class="date reveal">{{ resume.start }} to {{ resume.end }}</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </article>
+
+    </section>
+
+
+    <section id="portfolio">
+
+
+        <header>
+            <h3>My Favorite Projects</h3>
+            <h5><span>Holy Portfolio</span></h5>
+        </header>
+
+        <article>
+            <ul>
+                <li class="reveal" ng-repeat="project in projects">
+
+                    <a href="/assets/images/projects/{{ project.slug }}/featured.png" class="lightbox" rel="{{ project.slug }}">
+                      <img src="/assets/images/projects/{{ project.slug }}/th.jpg" alt="">
+                    </a>
+<!--
+                    @foreach ($images as $image)
+                        @if ($image->project_id == $project->id)
+                        <a href="/assets/images/projects/' . $project->slug . '/' . $image->name) }}" class="lightbox" style="display:none" rel="{{ $project->slug }}"></a>
+                        @endif
+                    @endforeach
+ -->
+                </li>
+            </ul>
+        </article>
+
+
+    </section>
+
+
+
+    <section id="contact">
+
+        <header>
+            <h3>Contact Me</h3>
+            <h5><span>You Know You Want To</span></h5>
+        </header>
+
+        <article>
+
+            <form method="POST" action="http://jason.dev:8888" accept-charset="UTF-8">
+                <input placeholder="Name" name="name" type="text">
+                <input placeholder="Email" name="email" type="text">
+                <input placeholder="Phone Number" name="phone" type="text">
+                <textarea placeholder="Message" name="message" cols="50" rows="10"></textarea>
+                <input class="button" type="submit" value="Submit">
+            </form>
+
+        </article>
+
+        <footer>
+            <ul>
+                <li>
+                <p>
+                    <a href="tel:9547030436">
+                        <img class="icon" src="/assets/images/icons/contact/phone.png" alt="">
+                    <span class="text">954.703.0436</span>
+                    </a>
+                </p>
+                </li>
+                <li>
+                <p>
+                    <a href="mailto:{{ $email }}">
+                        <img class="icon" src="/assets/images/icons/contact/mail.png" alt="">
+                        <span class="text">{{ $email }}</span>
+                    </a>
+                </p>
+                </li>
+                <li>
+                <p>
+                    <a href="https://www.google.com/maps/place/Fort+Lauderdale,+FL/@26.1411125,-80.149973,13z" target="_blank">
+                        <img class="icon" src="/assets/images/icons/contact/map.png" alt="">
+                        <span class="text">Ft. Lauderdale, Fl</span>
+                    </a>
+                </p>
+                </li>
+            </ul>
+        </footer>
+
+
+    </section>
+
