@@ -37,6 +37,6 @@ elixir(function(mix) {
 
     mix.copy(paths.SOURCE + 'images', paths.DESTINATION + 'images');
 
-    mix.scriptsIn(paths.SOURCE + 'js/app', paths.DESTINATION + 'js/main.js');
+    mix.scriptsIn(paths.SOURCE + 'js/app', paths.DESTINATION + 'js/app.js');
 
 });
